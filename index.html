@@ -12,6 +12,9 @@
       --secondary: #1e40af;
       --text: #111827;
       --muted: #6b7280;
+      --hover-bg: #dbeafe;
+      --btn-bg: #2563eb;
+      --btn-hover: #1e40af;
     }
     * { box-sizing: border-box; }
     body {
@@ -24,11 +27,12 @@
     header {
       background: linear-gradient(135deg, var(--primary), var(--secondary));
       color: #fff;
-      padding: 48px 20px;
+      padding: 60px 20px;
       text-align: center;
+      border-bottom: 5px solid var(--secondary);
     }
-    header h1 { font-size: 36px; margin: 0 0 10px; }
-    header p { font-size: 16px; margin: 0; opacity: 0.9; }
+    header h1 { font-size: 42px; margin: 0 0 10px; }
+    header p { font-size: 18px; margin: 0; opacity: 0.9; }
 
     .container {
       max-width: 960px;
@@ -75,6 +79,7 @@
     .right h2 {
       margin: 0 0 8px;
       font-size: 26px;
+      color: var(--primary);
     }
     .right .meta {
       color: var(--muted);
@@ -87,6 +92,7 @@
       border-radius: 12px;
       border: 1px solid #e5e7eb;
       min-height: 120px;
+      margin-top: 20px;
     }
 
     footer {
@@ -94,6 +100,30 @@
       padding: 20px 0;
       color: var(--muted);
       font-size: 14px;
+      background: var(--primary);
+      color: #fff;
+      border-top: 5px solid var(--secondary);
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--btn-bg);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: var(--btn-hover);
+    }
+
+    .card:hover {
+      box-shadow: 0 16px 40px rgba(0,0,0,0.1);
+      transform: translateY(-10px);
+      transition: all 0.3s ease-in-out;
     }
 
     @media(max-width: 720px){
@@ -132,6 +162,9 @@
     </div>
   </div>
 
-  <footer>© 2025 — Trang cá nhân của Đức Mạnh</footer>
+  <footer>
+    <p>© 2025 — Trang cá nhân của Đức Mạnh</p>
+    <a href="#" class="btn">Quay lại Trang Chính</a>
+  </footer>
 </body>
 </html>

@@ -161,6 +161,28 @@
       </div>
     </div>
   </div>
+<style>
+  /* Thay đổi màu nền nút và làm nổi bật nó */
+  .btn {
+    display: inline-block;
+    background: white;
+    color: var(--primary);  /* Màu chữ là màu chính */
+    padding: 12px 25px;
+    border-radius: 8px;
+    border: 2px solid var(--primary); /* Viền nút là màu chính */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+
+  /* Hiệu ứng khi hover */
+  .btn:hover {
+    background: var(--primary);
+    color: white;  /* Màu chữ chuyển sang trắng khi hover */
+    border-color: var(--primary);
+  }
+</style>
 
   <footer>
     <p>© 2025 — Trang cá nhân của Đức Mạnh</p>
